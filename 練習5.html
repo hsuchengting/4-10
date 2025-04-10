@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圖片左右 + 中間文字展示</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to right, #1e90ff, #ff4d4d);
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .image-box {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .image-box img {
+                max-width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+
+        .text-box {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+        }
+
+            .text-box h1 {
+                font-size: 2rem;
+                color: #333;
+            }
+
+            .text-box p {
+                font-size: 1.1rem;
+                color: #555;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-box">
+            <img src="410.jpg" alt="410.jpg"> 
+        </div>
+        <div class="text-box">
+            <h1>南台科技大學</h1>
+            <p>STUST</p>
+        </div>
+        <div class="image-box">
+            <img src="410-2.jpg" alt="410-2.jpg"> 
+        </div>
+    </div>
+</body>
+</html>
